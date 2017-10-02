@@ -1,6 +1,7 @@
 # InfoView
 A simple and easy to use information view for Android.
 
+|||
 |---|---|
 |<img src="https://raw.githubusercontent.com/marcoscgdev/InfoView/master/device-2017-10-02-181419.png" width="350">|<img src="https://raw.githubusercontent.com/marcoscgdev/InfoView/master/device-2017-10-02-183520.gif" width="350">|
 
