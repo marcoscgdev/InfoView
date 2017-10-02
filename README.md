@@ -1,7 +1,7 @@
 # InfoView
 A simple and easy to use information view for Android.
 
-<img src="https://raw.githubusercontent.com/marcoscgdev/StatusBarView/master/device-2017-09-03-180319.png" width="350">
+<img src="https://raw.githubusercontent.com/marcoscgdev/InfoView/master/device-2017-10-02-181419.png" width="350">
 
 ## Usage:
 
@@ -26,6 +26,8 @@ compile 'com.github.marcoscgdev:InfoView:1.0.0'
 
 ### Using the view
 
+- XML
+
 ```xml
 <com.marcoscg.infoview.InfoView
     android:id="@+id/info_view"
@@ -38,10 +40,14 @@ compile 'com.github.marcoscgdev:InfoView:1.0.0'
     app:iv_buttonText="Try again"
     app:iv_buttonTextColor="@color/colorAccent"/>
 ```
+
+- Java
+
 ```java
 InfoView infoView = (InfoView) findViewById(R.id.info_view);
     infoView.setTitle("Oops!");
     infoView.setMessage("That should not have happened.");
+    infoView.setIconRes(R.drawable.ic_sad_emoji);
     infoView.setButtonText("Try again");
     infoView.setButtonTextColorRes(R.color.colorAccent);
     infoView.setOnTryAgainClickListener(new InfoView.OnTryAgainClickListener() {
