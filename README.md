@@ -1,2 +1,82 @@
 # InfoView
 A simple and easy to use information view for Android.
+
+<img src="https://raw.githubusercontent.com/marcoscgdev/StatusBarView/master/device-2017-09-03-180319.png" width="350">
+
+## Usage:
+
+### Adding the depencency
+
+Add this to your root *build.gradle* file:
+
+```
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Now add the dependency to your app build.gradle file:
+
+```
+compile 'com.github.marcoscgdev:InfoView:1.0.0'
+```
+
+### Using the view
+
+```xml
+<com.marcoscg.infoview.InfoView
+    android:id="@+id/info_view"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    app:iv_title="Oops!"
+    app:iv_message="That should not have happened."
+    app:iv_icon="@drawable/ic_sad_emoji"
+    app:iv_buttonText="Try again"
+    app:iv_buttonTextColor="@color/colorAccent"/>
+```
+```java
+InfoView infoView = (InfoView) findViewById(R.id.info_view);
+    infoView.setTitle("Oops!");
+    infoView.setMessage("That should not have happened.");
+    infoView.setButtonText("Try again");
+    infoView.setButtonTextColorRes(R.color.colorAccent);
+    infoView.setOnTryAgainClickListener(new InfoView.OnTryAgainClickListener() {
+        @Override
+        public void onTryAgainClick() {
+            Toast.makeText(MainActivity.this, "Try again clicked!", Toast.LENGTH_SHORT).show();
+        }
+    });
+```
+
+### Using progressbar
+```java
+infoView.setProgress(true); // Show the progressbar
+infoView.setProgress(false); // Hide the progressbar and show the info content
+```
+
+---
+>See the *sample project* to clarify any queries you may have.
+
+---
+
+## License
+
+```
+Copyright 2017 Marcos Calvo García
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
