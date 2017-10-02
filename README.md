@@ -45,17 +45,17 @@ compile 'com.github.marcoscgdev:InfoView:1.0.0'
 
 ```java
 InfoView infoView = (InfoView) findViewById(R.id.info_view);
-    infoView.setTitle("Oops!");
-    infoView.setMessage("That should not have happened.");
-    infoView.setIconRes(R.drawable.ic_sad_emoji);
-    infoView.setButtonText("Try again");
-    infoView.setButtonTextColorRes(R.color.colorAccent);
-    infoView.setOnTryAgainClickListener(new InfoView.OnTryAgainClickListener() {
-        @Override
-        public void onTryAgainClick() {
-            Toast.makeText(MainActivity.this, "Try again clicked!", Toast.LENGTH_SHORT).show();
-        }
-    });
+infoView.setTitle("Oops!");
+infoView.setMessage("That should not have happened.");
+infoView.setIconRes(R.drawable.ic_sad_emoji);
+infoView.setButtonText("Try again");
+infoView.setButtonTextColorRes(R.color.colorAccent);
+infoView.setOnTryAgainClickListener(new InfoView.OnTryAgainClickListener() {
+    @Override
+    public void onTryAgainClick() {
+        Toast.makeText(MainActivity.this, "Try again clicked!", Toast.LENGTH_SHORT).show();
+    }
+});
 ```
 
 ### Using progressbar
