@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/iv_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/iv_image"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_sad_emoji"/>
+
+        <TextView
+            android:id="@+id/iv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            style="@style/TextAppearance.AppCompat.Title"
+            tools:text="Title here"/>
+
+        <TextView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            tools:text="Message here"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/iv_try_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Try again"
+            style="?borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/iv_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>

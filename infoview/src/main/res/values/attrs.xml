@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="InfoView">
+        <attr name="iv_title" format="string" />
+        <attr name="iv_message" format="string" />
+        <attr name="iv_icon" format="reference" />
+        <attr name="iv_buttonText" format="string" />
+        <attr name="iv_buttonTextColor" format="color" />
+    </declare-styleable>
+</resources>
