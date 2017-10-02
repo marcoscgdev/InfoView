@@ -3,6 +3,8 @@ A simple and easy to use information view for Android.
 
 <img src="https://raw.githubusercontent.com/marcoscgdev/InfoView/master/device-2017-10-02-181419.png" width="350">
 
+Download APK: https://github.com/marcoscgdev/InfoView/releases/download/1.0.0/app-debug.apk
+
 ## Usage:
 
 ### Adding the depencency
