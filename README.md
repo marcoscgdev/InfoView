@@ -1,4 +1,4 @@
-# InfoView
+# InfoView  [![API](https://img.shields.io/badge/API-14%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=14) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-InfoView-brightgreen.svg?style=flat)](https://android-arsenal.com/details/1/6275)
 A simple and easy to use information view for Android.
 
 |Screenshot|Video demo|
