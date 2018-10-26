@@ -25,7 +25,7 @@ allprojects {
 Now add the dependency to your app build.gradle file:
 
 ```
-compile 'com.github.marcoscgdev:InfoView:1.0.0'
+implementation 'com.github.marcoscgdev:InfoView:1.0.1'
 ```
 
 ### Using the view
@@ -42,7 +42,8 @@ compile 'com.github.marcoscgdev:InfoView:1.0.0'
     app:iv_message="That should not have happened."
     app:iv_icon="@drawable/ic_sad_emoji"
     app:iv_buttonText="Try again"
-    app:iv_buttonTextColor="@color/colorAccent"/>
+    app:iv_buttonTextColor="@color/colorAccent"
+    app:iv_showButton="true"/>
 ```
 
 - Java
