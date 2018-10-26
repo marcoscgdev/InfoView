@@ -15,6 +15,7 @@
         app:iv_message="That should not have happened."
         app:iv_icon="@drawable/ic_sad_emoji"
         app:iv_buttonText="Try again"
-        app:iv_buttonTextColor="@color/colorAccent"/>
+        app:iv_buttonTextColor="@color/colorAccent"
+        app:iv_showButton="true"/>
 
 </RelativeLayout>

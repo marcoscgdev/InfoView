@@ -6,5 +6,6 @@
         <attr name="iv_icon" format="reference" />
         <attr name="iv_buttonText" format="string" />
         <attr name="iv_buttonTextColor" format="color" />
+        <attr name="iv_showButton" format="boolean" />
     </declare-styleable>
 </resources>

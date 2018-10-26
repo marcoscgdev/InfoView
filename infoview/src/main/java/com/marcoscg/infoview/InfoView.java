@@ -129,6 +129,14 @@ public class InfoView extends RelativeLayout {
         return this;
     }
 
+    public InfoView setShowButton(boolean showButton) {
+        if (showButton)
+            tryAgain.setVisibility(VISIBLE);
+        else tryAgain.setVisibility(GONE);
+
+        return this;
+    }
+
     private void init(AttributeSet attrs, int defStyle) {
         inflate(getContext(), R.layout.info_view_layout, this);
         title = (TextView) findViewById(R.id.iv_title);
@@ -154,6 +162,7 @@ public class InfoView extends RelativeLayout {
                 icon = a.getDrawable(R.styleable.InfoView_iv_icon);
                 buttonText = a.getString(R.styleable.InfoView_iv_buttonText);
                 buttonTextColor = a.getColor(R.styleable.InfoView_iv_buttonTextColor, 0);
+                setShowButton(a.getBoolean(R.styleable.InfoView_iv_showButton, true));
             } finally {
                 a.recycle();
             }
